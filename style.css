@@ -1,0 +1,140 @@
+/* ----------------
+    font link
+----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* --------------------
+    common styles
+---------------------- */
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------------------
+    header styles
+---------------------- */
+header {
+    background: rgba(255, 144, 14, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 673px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.menu-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.menu-options {
+    display: flex;
+    gap: 50px;
+}
+
+.option {
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+
+/* --------------------
+    banner styles
+---------------------- */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+    text-align: center;
+}
+
+.banner-description {
+    font-size: 16px;
+    color: #727272;
+    width: 868px;
+    margin: 32px 0;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.button-primary {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #FF900E;
+    border: none;
+    border-radius: 8px;
+    width: 180px;
+    height: 64px;
+}
+
+.banner-image img {
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+/* ---------------------------
+    feature scetion styles
+----------------------------- */
+.feature {
+    display: flex;
+    gap: 73px;
+    margin-top: 85px;
+    margin-bottom: 130px;
+}
+
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-details {
+    width: 537px;
+    height: 304px;
+    margin-top: 150px;
+}
+
+.feature-title {
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+    width: 468px;
+    height: 106px;
+    margin-bottom: 24px;
+}
+
+.feature-title-span-1 {
+    font-weight: 700;
+    color: #131313;
+}
+
+.feature-title-span-2 {
+    font-weight: 700;
+    color: #FF900E;
+}
+.feature-description{
+    font-size: 16px;
+    color: #727272;
+    line-height: 30px;
+    margin-bottom: 32px;
+}

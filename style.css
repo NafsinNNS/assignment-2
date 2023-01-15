@@ -351,23 +351,17 @@ form {
     padding: 40px;
 }
 
-
-
-.hide {
-    display: none;
-}
-
 /* -------------
 Media query
 -------------- */
 @media only screen and (max-width: 688px) {
-    .header,.banner-image img,nav,.banner-description,.photo-collage img,.section-3,.section-3 img,.enjoyable-feature,.feature-details,.feature {
+    .header,.banner-image img,nav,.banner-description,.photo-collage img,.section-3,.section-3 img,.enjoyable-feature,.feature-details,.feature,.facts,.facts-description,.information,form,.feature-title,.sponsor-section {
         width: 100%;
     }
     .menu-title{
         margin-bottom: 0;
     }
-    .menu,.menu-options{
+    .menu,.menu-options,.facts-items,.sponsors{
         flex-direction: column;
         gap: 10px;
     }
@@ -375,16 +369,31 @@ Media query
         flex-direction: column;
         /* gap: 20px; */
     }
-    .photo-collage{
+    .photo-collage,form{
         grid-template-columns: repeat(1, 1fr);
     }
     .banner-title{
         margin-top: 40px;
     }
     .button-secondary{
-        display: none;
+        position: static;
     }
-    .section-3{
+    .section-3,.facts-items{
+        align-items: center;
+    }
+    .div-3{
+        grid-column: span 1;
+    }
+    .div-3 input{
+        width: 100%;
+    }
+    .information, form{
+        padding: 0;
+    }
+    .facts-items{
+        margin-left: 0;
+    }
+    .sponsors{
         align-items: center;
     }
 }

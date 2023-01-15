@@ -41,7 +41,7 @@ header {
 
 .menu-options {
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
 
 .option {
@@ -132,9 +132,259 @@ header {
     font-weight: 700;
     color: #FF900E;
 }
-.feature-description{
+
+.feature-description {
     font-size: 16px;
     color: #727272;
     line-height: 30px;
     margin-bottom: 32px;
+}
+
+/* -------------------------------
+enjoyable feature section start
+-------------------------------- */
+.section-3 {
+    display: flex;
+    gap: 146px;
+    margin-bottom: 85px;
+}
+
+.enjoyable-feature {
+    width: 586px;
+    height: 982px;
+}
+
+.enjoyable-feature-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    margin-bottom: 24px;
+    padding-left: 20px;
+}
+
+.enjoyable-feature-description {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 60px;
+    line-height: 30px;
+}
+
+.enjoyable-feature-items {
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+.enjoyable-feature-item-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+    margin-bottom: 10px;
+}
+
+.enjoyable-feature-item-description {
+    font-size: 16px;
+    color: #727272;
+    line-height: 30px;
+}
+
+.button-secondary {
+    width: 342px;
+    height: 200px;
+    background: #FF900E;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFFFF;
+    position: relative;
+    left: 640px;
+    bottom: 230px;
+}
+
+.button-secondary-span {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* ---------------------------
+    facts scetion styles
+----------------------------- */
+.facts {
+    margin-bottom: 180px;
+}
+
+.fatcs-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.facts-description {
+    color: #727272;
+    font-size: 16px;
+    width: 542px;
+    line-height: 30px;
+}
+
+.facts-items {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    gap: 124px;
+    margin-left: 50px;
+}
+
+.fact-item {
+    height: 241px;
+    width: 241px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+
+.fact-item img {
+    margin-top: 45px;
+}
+
+.fact-item h3 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.fact-item p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+
+/* ----------------------
+    help section style
+    ----------------------- */
+.information {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 150px 250px;
+    border-radius: 5px;
+}
+
+.help-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    background: #FFFFFF;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.div-3 {
+    grid-column: span 2;
+}
+
+
+.div-1,
+.div-2,
+.div-3 label {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FF900E;
+}
+
+.div-1 input,
+.div-2 input,
+.div-3 input,
+.div-4 select,
+.div-5 input {
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid #727272;
+    color: #727272;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.div-3 input {
+    width: 630px;
+}
+
+/* ----------------------------
+    sponsor section styles
+----------------------------- */
+.sponsor-section {
+    margin-bottom: 216px;
+}
+
+.sponsor-section h3 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 120px;
+}
+
+.sponsor-section p {
+    font-size: 16px;
+    color: #727272;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 50px;
+}
+
+.sponsors {
+    display: flex;
+    gap: 150px;
+    margin-bottom: 130px;
+}
+
+.copyright {
+    background: rgba(255, 144, 14, 0.1);
+    padding: 40px;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+/* -------------
+Media query
+-------------- */
+@media only screen and (max-width: 688px) {
+    .header,.banner-image img,nav,.banner-description,.photo-collage img,.section-3,.section-3 img,.enjoyable-feature,.feature-details,.feature {
+        width: 100%;
+    }
+    .menu-title{
+        margin-bottom: 0;
+    }
+    .menu,.menu-options{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .feature,.section-3{
+        flex-direction: column;
+        /* gap: 20px; */
+    }
+    .photo-collage{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-title{
+        margin-top: 40px;
+    }
+    .button-secondary{
+        display: none;
+    }
+    .section-3{
+        align-items: center;
+    }
 }
